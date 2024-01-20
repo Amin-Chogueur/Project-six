@@ -1,0 +1,222 @@
+:root{
+    --main-color: #198754;
+    --second-color:#19283f;
+    --btn-color:#ffc400;
+    --btn-back:#ff3150;
+}
+.head{
+    margin-bottom: 60px ;
+    position: relative; 
+    text-transform: capitalize; 
+}
+.head img{
+    margin-top: 70px;
+}
+.head::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* start navbar*/
+.navbar{
+    background-color:var(--second-color);
+    border-bottom: 1px solid #777;
+}
+.nav-link,
+.navbar-nav .nav-link,
+.navbar-brand{
+    text-transform: capitalize;
+    color: white ;
+    font-size: 20px;
+    transition: 0.5;
+}
+.navbar-brand{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+@media(min-width:992px){
+.nav-link:focus,
+.navbar-brand,
+.nav-link:hover{
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+}
+@media(max-width:991px){
+    .nav-link:focus,
+    .nav-link:hover{
+        color: var(--main-color);
+    }
+    }
+
+.navbar-brand:hover,
+.navbar-brand:focus{
+    color: white;
+}
+.navbar-toggler{
+    background-color: white;
+    padding: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    color: white;
+}
+
+/* end navbar */
+/* start landing*/
+.landing{
+    height: 100vh;
+    background-color: #19283f;
+    text-transform: capitalize;
+}
+.btn{
+    background-color: #ff3150;
+    color: #ffc400;
+}
+.landing h1{
+    margin-top: 200px;
+    color: white;
+}
+.lead{
+    color: #999;
+}
+/*end landing*/
+/*start features*/
+.feature span{
+    font-size: 180px;
+    color: rgb(25, 135, 84,0.1);
+    font-family: serif;
+}
+.feature-head {
+    position: relative;
+}
+.feature-head i{
+    font-size: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    color: var(--main-color);
+}
+.feature h3{
+    color: #ffc400;
+}
+/*end features*/
+/* start work*/
+.work{
+    background-color: rgb(25, 135, 84,0.3);
+    padding: 20px 0;
+}
+.work ul{
+    padding: 0;
+}
+.work ul li{
+    list-style: none;
+    text-transform: capitalize;
+}
+.work ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px ;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.work ul li a:hover{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: white;
+}
+.work ul li:first-child a{
+    background-color: var(--btn-back);
+    color:var(--btn-color);
+}
+.work .boxes{
+    padding: 0 10px;
+}
+
+.work .box img{
+    width: 100%;border: 5px solid white;
+}
+.work .box {
+    position: relative;
+    overflow: hidden;
+}
+.work .box::after{
+    position: absolute;
+    content: "Application";
+    left: 12px;
+    top: -20px;
+    width: calc(100% - 24px);
+    height: 0;
+    background-color: rgb(25, 135, 84,0.6);
+    transition: 0.5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.work .box:hover::after{
+    height: 100%;
+    top: 0;
+}
+/* end work*/
+/* start about */
+.about .image{
+    position: relative;
+}
+.about .image .name{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--second-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+/* end about */
+/* start team */
+.team{
+    background-color:rgb(25, 135, 84,0.3) ;
+}
+/* end team */
+/* start project */
+.project{
+    background-color: var(--second-color);
+    color: white;
+    padding: 60px 0;
+}
+/* end project */
+/* start subscribe */
+.subscribe{
+    background-color: var(--btn-color);
+}
+.subscribe input{
+    border: none;
+    outline: none;
+    background-color: var(--btn-color);
+    color: white;
+    
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+/* end subscribe */
+/* start footer */
+.footer{
+    background-color: var(--second-color);
+    color: white;
+}
+/* end footer */
